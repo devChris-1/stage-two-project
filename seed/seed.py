@@ -14,7 +14,6 @@ def safe_get(item, *keys):
     return None
 
 with app.app_context():
-    db.drop_all()
     db.create_all()
     with open("data.json") as f:
         data = json.load(f)
