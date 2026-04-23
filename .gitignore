@@ -1,107 +1,65 @@
 # =========================
-
 # Python
-
 # =========================
-
-**pycache**/
+__pycache__/
 *.py[cod]
 *$py.class
-*.pyo
-*.pyd
 
 # =========================
-
 # Virtual Environment
-
 # =========================
-
 venv/
 env/
-.venv/
 ENV/
+.venv/
 
 # =========================
-
 # Environment Variables
-
 # =========================
-
 .env
 .env.*
-*.env
 
 # =========================
-
-# Database (IMPORTANT)
-
+# Flask
 # =========================
-
-instance/
+instance/*.db
+instance/*.sqlite3
 *.db
 *.sqlite3
 
 # =========================
-
-# Seed / Data Files
-
-# =========================
-
-data.json
-*.csv
-
-# =========================
-
 # Logs
-
 # =========================
-
 *.log
 
 # =========================
-
-# Flask
-
+# OS / Editor files
 # =========================
-
-.flaskenv
-
-# =========================
-
-# IDE / Editor
-
-# =========================
-
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# =========================
-
-# OS Files
-
-# =========================
-
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
 # =========================
-
-# Build / Cache
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
 
 # =========================
-
-.cache/
+# Cache / Testing
+# =========================
 .pytest_cache/
-coverage/
+.coverage
 htmlcov/
 
 # =========================
-
-# Misc
+# Node (if any frontend)
+# =========================
+node_modules/
 
 # =========================
-
-*.bak
-*.tmp
+# IMPORTANT: Allow dataset
+# =========================
+!data.json
